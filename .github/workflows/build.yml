@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: "Checkout"
       uses: "actions/checkout@v4"
-    - name: "Upload image"
+    - name: "Build image"
       uses: "RadxaOS-SDK/rsdk/.github/actions/build@main"
       with:
         github-token: "${{ secrets.GITHUB_TOKEN }}"
@@ -24,7 +24,7 @@ jobs:
     steps:
     - name: "Checkout"
       uses: "actions/checkout@v4"
-    - name: "Generate rbuild changelog"
+    - name: "Generate changelog"
       uses: "radxa-repo/rbuild-changelog@main"
       with:
         product: "rock-5b-6_1"
